@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+.header{
+    padding: 80px;
+    text-align: center;
+    background: beige;
+    color: brown;
+}
+/* Menabahkan ukuran font pada h1 */
+.header h1{
+    font-size: 40px;
+}
+/* Styling pada top navbar */
+.navbar{
+    /* Pilihan : overflow, hidden, visible */
+    overflow: hidden; 
+    background-color: chocolate;
+}
+/* Styling navbar link */
+.navbar a{
+    float: left;
+    /* Pilihan : inline(span, block warna), block(<p>), content(hilang container)*/
+    display: block; 
+    color: white;
+    text-align: center;
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+/* Untuk link sebelah kanan */
+.navbar a.right{
+    float: right;
+}
+/* Ubah warna saat di hover */
+.navbar a:hover{
+    background-color: bisque;
+    color: black;
+}
+/* Memastikan ukuran yang tepat */
+* {
+    box-sizing: border-box;    
+}
+/* Column container */
+.row{
+    display: flex;
+    /* Pilihan: wrap, nowrap, wrap-reverse, initial */
+    flex-wrap: wrap;
+}
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%; /* Set the width of the sidebar */
+  background-color: #f1f1f1; /* Grey background color */
+  padding: 20px; /* Some padding */
+}  
+  /* Main column */
+.main { 
+  flex: 70%; /* Set the width of the main content */
+  background-color: white; /* White background color */
+  padding: 20px; /* Some padding */
+}
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row { 
+      flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+      float: none;
+      width: 100%;
+    }
+}
+.footer {
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+    background: #ddd; /* Grey background */
+}
+/* Footer info */
+info{
+    text-align: center;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+*{
+    box-sizing: border-box;
+}
+/* Style inputs */
